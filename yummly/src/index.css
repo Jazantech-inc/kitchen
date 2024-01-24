@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@1,700&family=Ubuntu:wght@300;400;500;700&family=Varela+Round&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.link:before{
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgb(255, 196, 0),
+        rgba(255, 180, 5, 0.619)
+    );
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width:0;
+    position: absolute;
+}
+
+.link:hover:before{
+    width: 100%;
+    transition: width 600ms ease;
+}
+
+.active{
+    border-bottom: 2px solid rgb(255, 165, 0);
+    
+}
+
+.splide__arrow{
+    background-color:white !important;
+    border: 0 !important;
+    border-radius: 50% !important;
+    height: 1.3em !important;
+    width: 1.3em !important;
+}
+
+.splide__arrow svg{
+    fill: black !important;
+    padding: 0.3rem;
+    height: 1.3em !important;
+    width: 1.3em !important;
+}
+
+input:focus{
+    outline: none !important;
+    box-shadow:  none !important;
+}
+.submitbutton{
+    font-weight: bold !important;
+    background-color: rgb(245, 216, 26) !important;
+ }
+
+ .back{
+    background-image: url("./assets/Images/img5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+ }
+
+ .not-found-container {
+    padding-inline: 26px;
+}
+
+.not-found-container .link-button {
+    width: 100%;
+    background-color: #161616;
+    color: white;
+}
